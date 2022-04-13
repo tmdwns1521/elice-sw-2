@@ -1,0 +1,41 @@
+<html>
+    <style>
+        .box{
+            border: solid 1px;
+            padding: 0 5px;
+            background-color: gray;
+            color: white;
+            cursor: pointer;
+        }
+        .texts{
+            display: none;
+        }
+    </style>
+    <body>
+        JavaScript is <span class="box" onclick="
+            document.querySelector('.texts').style.display = 'inline';
+            this.style.display = 'none';
+        ">...</span> <span class="texts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto 
+            inventore iste amet expedita aperiam vel labore quasi, 
+            non deserunt optio natus? Earum eum saepe fuga, voluptatem quod itaque omnis praesentium.</span>
+    </body>
+    <hr>
+    <style>
+        .box{
+            border: solid 1px;
+            padding: 0 5px;
+            background-color: gray;
+            color: white;
+            cursor: pointer;
+        }
+        .texts{
+            display: none;
+        }
+    </style>
+    <body>
+        JavaScript is <span class="box" onclick="
+            document.querySelector('.texts2').innerHTML = `HI`;
+            this.style.display = 'none';
+        ">...</span> <span class="texts2"></span>
+    </body>
+</html>
