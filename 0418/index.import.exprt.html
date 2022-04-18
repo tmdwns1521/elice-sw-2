@@ -1,0 +1,62 @@
+<html><head>
+    <title>WEB - Welcome</title>
+    <meta charset="utf-8">
+    <script src="https://elice-sw2.disqus.com/embed.js" data-timestamp="1649210534761">
+    </script>
+    <link rel="prefetch" as="style" href="https://c.disquscdn.com/next/embed/styles/lounge.63860eb743c7d9d2adf0fa435788abe7.css"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/common.bundle.9450cde9dd2c9d366781a8fc5ff6e933.js"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/lounge.bundle.90614da243fa6052a038b5539f5086e5.js"><link rel="prefetch" as="script" href="https://disqus.com/next/config.js"><script src="https://c.disquscdn.com/next/embed/alfie_v4.63f1ab6d6b9d5807dc0c94ef3fe0b851.js" async="" charset="UTF-8"></script><script src="https://ats.rlcdn.com/ats.js" async="" charset="UTF-8">
+    </script>
+    <style>
+        h1{
+            border-bottom:10px solid green;
+            padding:30px;
+            margin-bottom: 0;
+        }
+        h1 a{
+            text-decoration: none;
+        }
+        ol{
+            
+            margin-top: 0;
+        }
+        @media all and (min-width: 480px){
+            #contatiner{
+                display:grid;
+                grid-template-columns: 150px 1fr;
+            }
+            ol{
+                border-right: 10px solid pink;
+            }
+        }
+        
+    </style>
+    </head>
+<body>
+    <script type="module">
+        import {dayNight, day} from './daynight.js';
+        function listener(evt){
+            if(evt.target.value === "night"){
+                dayNight('night');
+                evt.target.value = 'day';
+            }else {
+                dayNight('day');
+                evt.target.value = 'night';
+            }
+        }
+        document.querySelector('#dayNightBtn').addEventListener("click",listener);
+    </script>
+    <input type="button" id="dayNightBtn" value="night" >
+
+    <h1><a href="index.html">WEB</a></h1>
+
+    <div id="contatiner">
+        <ol>
+            <li><a href="1.html">html</a></li>
+            <li><a href="2.html">css</a></li>
+            <li><a href="3.html">javascript</a></li>
+        </ol>
+        <div>
+            <h2>Welcome</h2>
+            Hello, WEB!!!!!
+        </div>
+    </div>
+</html>
